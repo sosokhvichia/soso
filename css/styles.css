@@ -1,0 +1,1198 @@
+
+
+body{
+    background-color: #F8FBFF;
+
+    
+}
+h3, h4, p{
+    font-family: "bpg arial caps";
+}
+
+:focus {
+    outline: 0;
+    }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*******************   Scrollbar   *********************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #06B3BA; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0B8A8F;
+  }
+  
+/*=========  FONTS  ==========*/
+
+@font-face{
+    font-family: "bpg arial caps";
+    src: url(../fonts/bpg-arial-caps-webfont.ttf)
+}
+
+
+
+.top__header__section{
+    width: 100%;
+    background-color: #F1F4F6;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.top-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*******************   start top-header-contact   *********************/
+
+.top-header-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.top-header-contact ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 8px 0;
+    font-family: "BPG Arial Caps", sans-serif;
+    font-size: 13px;
+}
+
+.top-header-contact ul li a{
+    text-decoration: none;
+    color: #373737;
+    padding-right: 10px;
+}
+
+
+.fa-map-marker-alt {
+    color:#06B3BA;
+    font-size: 17px;
+    padding-right: 7px;
+}
+
+.fa-phone-alt{
+    color:#06B3BA;
+    font-size: 17px;
+    padding-right: 7px;
+}
+
+.fa-paper-plane{
+    color:#06B3BA;
+    font-size: 17px;
+    padding-right: 7px;
+}
+
+.fa-clock{
+    color:#06B3BA;
+    font-size: 17px;
+    padding-right: 7px;
+}
+
+/*******************  End top-header-contact   *********************/
+
+
+/*******************  START social-media-icon  *********************/
+
+.social-media-icon {
+    display:flex;
+    align-items: center;
+}
+
+.social-media-icon ul li {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+}
+
+.fa-facebook-square{
+    color:#06B3BA;
+    font-size: 27px;
+}
+
+.fa-instagram-square{
+    color:#06B3BA;
+    font-size: 27px;
+}
+
+.fa-twitter-square{
+    color:#06B3BA;
+    font-size: 27px;
+}
+
+.fa-facebook-square:hover, .fa-instagram-square:hover, .fa-twitter-square:hover {
+    color:#0B8A8F;
+    transition: 0.5s;
+}
+
+
+/*******************  End social-media-icon  *********************/
+
+/******************* START dropdown-language-bar-button   *********************/
+
+.language-bar{
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+
+
+}
+
+.dropdown-language-bar-button{
+    background-color:transparent;
+    color: #373737;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding:8px;
+}
+
+.dropdown-language-bar{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 20px;
+    overflow: auto;
+    box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.082);
+    z-index: 1;
+    top:33px;
+    right: -3px;
+    border-radius: 3px;
+    border: solid 1px #E5E5E5;
+}
+
+.dropdown-language-bar a{
+    color: black;
+    padding:8px;
+    text-decoration: none;
+    display: block;
+    font-family: "BPG Arial Caps", sans-serif;
+    font-size: 13px;
+}
+
+.language-bar:hover .dropdown-language-bar{
+    display: block;
+}
+
+.dropdown-language-bar a:hover{
+    background-color:#06B3BA;
+    color:white;
+}
+
+
+/*******************  Start main__header__section  *********************/
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.logo{
+    width: 150px;
+    height: 70px;
+    position: relative;
+}
+
+.search-container{
+    position: relative;
+    width: 450px;
+}
+.search-form{
+    border-style: solid;
+    border-color: #E6E6E6;
+    width: 100%;
+    height:38px;
+    border-radius: 3px;
+    border-width: thin;
+    text-decoration: none;
+    outline: none;
+    padding: 9px 40px 9px 9px;
+    font-family: "BPG Arial Caps", sans-serif;
+}
+
+.search-btn{
+    width: 40px;
+    height: 38px;
+    border-radius: 0 3px 3px 0 ;
+    background-color: #06B3BA;
+    color: white;
+    border: solid #E6E6E6;
+    border-width: thin;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    z-index: 3;
+    margin-left: -40px;
+    position:absolute;
+}
+
+.header-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-button, .register-button, .sign-in-button{
+    margin: 5px;
+    padding: 10px;
+    border-style: none;
+    background: none;
+    background-color: #06B3BA;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+    font-family: "BPG Arial Caps", sans-serif;
+    outline: none;
+}
+
+.call-button:hover, .register-button:hover, .sign-in-button:hover, .search-btn:hover{
+    background-color: #16999E;
+    transition: 0.4s;
+}
+
+/***********  burger menu  ************/
+
+
+
+
+
+/*******************  End main__header__section  *********************/
+
+.nav__bar__section{
+    width: 100%;
+    background-color: #06B3BA;
+    margin-top: 10px;
+    height: 50px;
+}
+
+
+nav ul{
+   
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    position:relative;
+}
+
+nav ul li ul li{
+    display: block;
+    width: 300px;
+    z-index: 888;
+    
+}
+
+nav ul li ul li a{
+    border-bottom: solid 1px  #16999E;
+}
+nav ul li ul{
+    position:absolute;
+    left: 0;
+    background: #06B3BA;
+    opacity: 90%;
+    display: none;
+    z-index: 888;
+    
+}
+
+nav ul li.active ul{
+    display: block;
+    
+}
+
+nav ul li.sub-menu::before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+}
+
+nav ul li.active.sub-menu::before{
+    content: '\f0d8';
+}
+
+nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 16px;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: "BPG Arial Caps", sans-serif;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active{
+    color: #FFF;
+    background:#16999E;
+}
+
+.menu-toggle{
+    color:#FFF;
+    float: left;
+    line-height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*******************  Start Slider  *********************/
+
+.slider-container{
+    width: 100%;
+}
+
+
+
+.sl img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    
+} 
+
+.sl .prev-arrow{
+    position: absolute;
+    left:3%;
+    top:50%;
+    color:#06B3BA;
+    cursor: pointer;
+    font-size:40px;
+    z-index: 2000;
+}
+
+
+.sl .next-arrow{
+    position: absolute;
+    right:3%;
+    top:50%;
+    color:#06B3BA;
+    cursor: pointer;
+    font-size:40px;
+}
+
+.sl__text{
+    position: relative;
+    top:-300px;
+    left: 54%;
+}
+
+.sl__title {
+    position: absolute;
+    width:300px;
+    font-size: 25px;
+    color:#5a5a5a;
+    text-decoration: none;
+    
+}
+
+
+
+
+.sl .slick-dots li{
+    top:-50px;
+}
+
+
+.sl  .slick-dots li button:before{
+    color: #8ecacc;
+    font-size: 35px; 
+}
+
+.sl  .slick-dots li.slick-active button:before{
+    color: #06B3BA;    
+}
+
+/*******************  Start service__section  *********************/
+
+.service__section{
+    width: 100%;
+    margin:0 auto;
+    z-index:1000;
+}
+
+.service-container-title{
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "BPG Arial Caps", sans-serif;
+    color:#06B3BA;
+    letter-spacing: 2px; 
+}
+
+.title-line{
+    width: 100px;
+    color: #06B3BA; 
+    border-style: solid ;
+    margin:0 auto;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+/*******************  End service__section  *********************/
+
+
+/*=============  Start our__services   ================*/
+
+.our__services{
+    width:100%;
+    margin-top: 10px;
+}
+
+
+.service-items-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 20px;  
+}
+
+.service-items-group a{
+    text-decoration: none;
+    color: white;
+    font-family: "BPG Arial Caps", sans-serif;
+    width: 100%;
+    height:210px;
+
+}
+.service-items-1{
+    background-color:#06B3BA; 
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 50px 10px;
+    transition: 0.3s;
+}
+
+.service-items{
+    background-color:#16999E;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 50px 10px;
+    transition:  0.3s;
+}
+
+.service-title{
+    margin-top:20px;
+    font-size: 20px;
+}
+
+.fa-stethoscope{
+    font-size: 40px;
+}
+
+.service-items-1:hover{
+    
+    border-bottom:solid 10px #16999E;
+    height:210px;
+    text-shadow: 2px 2px 4px #636363;
+}
+
+.service-items:hover{
+    letter-spacing: 0.5px;
+    border-bottom:solid 10px #06B3BA;
+    height:210px;
+    text-shadow: 2px 2px 4px #535353;
+}
+
+
+
+
+/*******************  Start doctor__section  *********************/
+
+.doctor__section{
+    width: 100%;
+    margin:5px auto;
+}
+
+.doctor-container-title{
+    padding: 20px 0 10px;
+    text-align: center;
+    font-family: "BPG Arial Caps", sans-serif;
+    color:#06B3BA;
+    letter-spacing: 2px; 
+}
+
+.title-line{
+    width: 100px;
+    color: #06B3BA; 
+    border-style: solid ;
+    margin:0 auto;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+/*******************  End doctor__section  *********************/
+
+/*******************  Start our__doctor  *********************/
+
+.our__doctor{
+    background-image: url("../img/bg.png");
+    background-repeat: repeat-x;
+    border-top: solid thin #eeeeee;
+    border-bottom: solid thin #eeeeee;
+    margin-top:25px;
+    
+}
+
+
+
+
+.our-doctor-group{
+    margin:10px;  
+}
+
+.our-doctor-item{
+    background-color: #ffffff;
+    border: solid thin #eeeeee;
+    border-radius: 3px;
+    width: 180px;
+    height: 180px;
+    margin:8px;
+    position: relative;
+}
+
+.our-doctor-item-inner{
+    padding:7px;
+    margin: 0 auto;
+}
+
+.our-doctor-item img{
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 50%;
+    border:solid 6px  #06b4bac7;
+    width: 170px;
+    height: 170px;  
+}
+.our-doctor-item h4{
+    text-align: center;
+    margin-top: 5px;
+    font-family: "bpg arial caps";
+    color: #06B3BA;
+}
+
+.our-doctor-item p{
+    text-align: center;
+    margin-top: 5px;
+    font-family: "bpg arial caps";
+    color:#5a5a5a;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-doctor-item button{
+    position: relative;
+    text-align: center;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color:#06B3BA;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 180px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    font-family: "bpg arial caps";
+    font-size: medium;
+}
+
+.our-doctor-group .slick-dots li.slick{
+    color: #06B3BA;
+    font-size: 25px;
+}
+
+.our-doctor-group .slick-dots li button{
+    border-radius: 5px;
+}
+.our-doctor-group .slick-dots li button:before{
+    color: #8ecacc;
+    font-size: 25px; 
+}
+
+.our-doctor-group .slick-dots li.slick-active button:before{
+    color: #06B3BA;    
+}
+
+.our-doctor-group .prev-arrow {
+    position: absolute;
+    left:-20px;
+    top:50%;
+    color:#06B3BA;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.our-doctor-group .next-arrow{
+    position: absolute;
+    right:-20px;
+    top:50%;
+    color:#06B3BA;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*******************  სიახლეები  *********************/
+
+.news-group .news-item{
+    width:820px;
+    border: solid thin #eeeeee;
+    border-radius: 4px;
+    margin:10px;
+}
+
+
+.news-item img{
+    width: 100%;
+    border-radius: 4px 4px 0 0 ;
+
+}
+
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+
+.blog-text p{
+    height:110px;
+    padding: 3px 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more {
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    border-top:solid thin #eeeeee;
+    width:200px;
+    font-family: "bpg arial caps";
+    padding-top:7px;
+}
+
+.read-more a{
+    text-decoration: none;
+    color: #06B3BA;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.news-items-date{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    background-color: #06B3BA;
+    border-radius: 4px;
+    margin:-20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-calendar-alt{
+    font-size: 23px;
+    color: #E5E5E5;
+}
+
+.news-items-date p{
+    color: #E5E5E5;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.news-group .slick-dots li.slick{
+    color: #06B3BA;
+    font-size: 25px;
+}
+
+.news-group .slick-dots li button{
+    border-radius: 5px;
+}
+.news-group .slick-dots li button:before{
+    color: #8ecacc;
+    font-size: 25px; 
+}
+
+.news-group .slick-dots li.slick-active button:before{
+    color: #06B3BA;    
+}
+
+
+
+
+/*******************  დაბადებული ახალშობილების კალკულატორი  *********************/
+
+.calculation-section{
+    max-width:100%;
+    height: 350px;
+    background-image: url("../img/calculation.jpg");
+    margin-top: 20px;
+    border:solid thin #e7e7e7;
+    background-blend-mode:darken;
+    color: black;
+    
+    
+    
+}
+
+
+/*******************  სიახლეების სათაური  *********************/
+
+.section-title{
+    width: 100%;
+    margin:5px auto;
+}
+
+.container-title h3{
+    padding: 20px 0 10px;
+    text-align: center;
+    font-family: "BPG Arial Caps", sans-serif;
+    color:#06B3BA;
+    letter-spacing: 2px; 
+}
+
+
+/*******************  Start insurance__section__title  *********************/
+
+.insurance__section__title{
+    width: 100%;
+    margin:25px auto;
+}
+
+.insurance-container-title{
+    padding: 20px 0 10px;
+    text-align: center;
+    font-family: "BPG Arial Caps", sans-serif;
+    color:#06B3BA;
+    letter-spacing: 2px; 
+}
+
+.title-line{
+    width: 100px;
+    color: #06B3BA; 
+    border-style: solid ;
+    margin:0 auto;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+
+/*******************  Start insurance__section  *********************/
+
+
+.insurance-logo-items{
+    position: relative; 
+}
+
+.insurance-logo-items .insurance-logo-images img{
+    width: 100%;
+    height: auto;
+    outline: none;
+    transition: 1s;
+    border-radius: 2px;
+}
+
+.insurance-logo-items .insurance-logo-images{
+    border-radius: 4px;
+    border:1px solid #eeeeee;
+    outline: none;
+    transition: 1s;
+}
+
+.insurance-logo-items .insurance-logo-images:hover{
+    border-color:#8ecacc;
+}
+.insurance-logo-items .slick-slide{
+    margin:10px;
+}
+
+.insurance-logo-items .slick-dots li.slick{
+    color: #06B3BA;
+    font-size: 25px;
+}
+
+.insurance-logo-items .slick-dots li button{
+    
+    border-radius: 5px;
+}
+.insurance-logo-items .slick-dots li button:before{
+    color: #8ecacc;
+    font-size: 25px; 
+}
+
+.insurance-logo-items .slick-dots li.slick-active button:before{
+    color: #06B3BA; 
+    
+}
+
+.insurance-logo-items .prev-arrow{
+    position: absolute;
+    left:-10px;
+    top:40%;
+    color:#06B3BA;
+    cursor: pointer;
+}
+
+.insurance-logo-items .next-arrow{
+    position: absolute;
+    right:-10px;
+    top:40%;
+    color:#06B3BA;
+    cursor: pointer;
+}
+
+.insurance-logo-images img:hover{
+    opacity: 0.6;
+}
+
+
+/*******************  End insurance__section  *********************/
+
+
+
+/*******************  Start main__footer__section  *********************/
+
+
+.main__footer__section{
+    flex-shrink: 0;
+    width: 100%;
+    background-color:#ecf2f5;
+    border-top: solid #06B3BA; 
+    margin-top: 40px;
+
+    
+}
+
+.footer-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.footer-items-contact{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-logo{
+
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+}
+
+.footer-items-contact-title{
+    font-family: "BPG Arial Caps", sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.footer-items-contact-list ul li{
+    list-style: none;
+    padding-top:9px;
+}
+
+.footer-items-contact-list ul li a{
+    text-decoration: none;
+    color:#5a5a5a;
+    font-family: "BPG Arial Caps", sans-serif;
+    font-size: 13px;
+}
+
+
+.footer-title-line{
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.footer-media-icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-media-icon ul li{
+    list-style: none;
+    padding:15px 8px;
+}
+
+/*******************  End insurance__section  *********************/
+
+
+/*******************  Start footer-items-category  *********************/
+
+.footer-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-items-category{
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-items-category-title{
+    font-family: "BPG Arial Caps", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100px;
+    color: #5a5a5a;
+}
+
+.footer-items-category-list ul{
+    padding:15px;
+}
+
+.footer-items-category-list ul li{
+    list-style: none;
+    font-family: "BPG Arial Caps", sans-serif;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.footer-items-category-list ul li a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.footer-items-category-list ul li a:hover{
+    color: #06B3BA; 
+}
+
+/*******************  Start footer-items-worktime *********************/
+
+
+
+/*******************  End footer-items-worktime *********************/
+
+/*******************  Start copyright__section  *********************/
+
+
+
+.copyright{
+
+    border-top: solid #06B3BA;
+    border-width: thin;
+}
+
+.copyright p{
+    color:#616161;
+    font-family: "BPG Arial Caps", sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/*******************  End copyright__section  *********************/
+
+
+
+
+
+
+
+
+
+
+/*******************  კონტაქტი  *********************/
+
+.top-title{
+    display: flex;
+    align-items:flex-start;
+    align-items: center;
+}
+
+.top-title h2{
+    display: flex;
+    align-items: center;
+    padding: 30px 3px;
+    font-family: "BPG Arial Caps", sans-serif;
+    color:#5a5a5a;
+    letter-spacing: 2px;
+}
+.top-title-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid #06B3BA 2px;
+    border-radius: 4px;
+    margin-left:2px;
+    width:100%;
+
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.contact a{
+    font-family: "BPG Arial Caps", sans-serif;
+    text-decoration: none;
+    color:#3b3b3b;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.contact-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marked, .fa-envelope-open-text, .fa-phone{
+    font-size: 50px;
+    color:#06B3BA;
+}
+.contact-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.contact-social-media{
+    display:flex;
+    justify-content: center;
+} 
+
+.contact-social-media li{
+    list-style: none;
+    margin: 10px 20px;
+    display: inline-block;
+    font-size: 30px;
+    color:#06B3BA;
+    padding: 15px 15px;
+    border: 1px solid #06B3BA;
+    border-radius: 4px;
+    
+}
+.contact-social-media li a{
+    text-decoration: none;
+    color:#06B3BA;
+}
+.contact-social-media li:hover{
+    color:#3b3b3b;
+    border: 1px solid #3b3b3b;
+    transition: .5s;
+}
+
+
+.map-location{
+    margin: 20px 0;
+    max-width: 100%;
+    height: 500px;
+    border: solid 1px rgb(209, 209, 209);
+}
+.googlemap{
+    width: 100%;    
+}
+
+
+
+/*******************  გალერეა  *********************/
+
+
+
+
+
+.gallery-filter-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-filter-list ul li{
+    list-style: none;
+    padding: 7px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "BPG Arial Caps", sans-serif;
+    border: 1px solid #06B3BA;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:0 5px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-filter-list ul .active,
+.gallery-filter-list ul li:hover{
+    color: #fff;
+    background:#06B3BA;
+}
+
+.gallery-filter-items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.gallery-filter-items img{
+    object-fit: cover;
+    width: 240px;
+    height: 200px;
+    margin:2px 6px 0 0;
+}
+
+.gallery-filter-items a{
+    list-style: none;
+}
